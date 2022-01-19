@@ -1,0 +1,229 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="java.js">
+</head>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Favourite VietNam Artists 2021 Survey Form</h1>
+    <p id="description" class="description text-center">
+      This is a survey where you can tell me about which VNese Artists that you're inspired by in 2021?
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"/>
+    </div>
+    <div class="form-group">
+      <p>Your gender</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Pick one</option>
+        <option value="student">Male</option>
+        <option value="job">Female</option>
+        <option value="learner">Others</option>
+        <option value="preferNo">Prefer not to say</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you like to be invited me a coffee</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"/>Yehh, of course!</label>
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Sure</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite kind of Music that you're often listening to?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Rap</option>
+        <option value="projects">RnB</option>
+        <option value="community">Ballads</option>
+        <option value="community">Jazz</option>
+        <option value="community">EDM</option>
+        <option value="openSource">Others</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Which VietNamese Artists are you be inspired by in 2021?
+        <span class="clue">(Pick 5)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Đen Vâu</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Sơn Tùng M-TP</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Hoàng Thùy Linh</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />MCK</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />T-linh</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Rhymastics</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Lil'Wuyn</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />Hà Anh Tuấn</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Erik</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Trúc Nhân</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />BRay</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />A Tùng Q.9 HCMUT 2010770</label
+      >
+        <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Others and Write in the comment box</label
+      >
+    </div>
+
+
+    <div class="form-group">
+      <p>Any comments about the survey?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here and thanks you so much for your reply"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        <b>Submit</b>
+      </button>
+    </div>
+  </form>
+</div>
+</html>
